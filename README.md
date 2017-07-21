@@ -1,2 +1,59 @@
 # ProgrammingAssignment3
 Getting and Cleaning Data
+This document describes all data fields in the Tidy_Data.txt dataset.
+
+Identifier Labels
+- subject  - The ID of the test subject
+- activity  - The type of activity performed when the corresponding measurements were taken
+
+
+The Activity labels that represent a subject's activity during the test:
+- WALKING            : subject was walking
+- WALKING_UPSTAIRS   : subject was walking up a staircase
+- WALKING_DOWNSTAIRS : subject was walking down a staircase
+- SITTING            : subject was sitting
+- STANDING           : subject was standing
+- LAYING             : subject was laying down
+
+
+Labels Corresponding to Various Measurements
+                                  
+TimeBodyAccelerometerMean()-X                 
+TimeBodyAccelerometerMean()-Y                
+TimeBodyAccelerometerMean()-Z 
+X,Y,Z represent gyroscope 3-axial and I am going to combine 3 columns as 1 record like ...-{X,Y,Z}:
+- TimeBodyAccelerometerMean()-{X,Y,Z}
+- TimeBodyAccelerometerStd()-{X,Y,Z}
+- TimeGravityAccelerometerMean()-{X,Y,Z}
+- TimeGravityAccelerometerStd()-{X,Y,Z}
+- TimeBodyAccelerometerJerkMean()-{X,Y,Z}
+- TimeBodyAccelerometerJerkStd()-{X,Y,Z}
+- TimeBodyAccelerometerJerkStd()-{X,Y,Z}             
+- TimeBodyGyroscopeMean()-{X,Y,Z}
+- TimeBodyGyroscopeStd()-{X,Y,Z}
+- TimeBodyGyroscopeJerkMean()-{X,Y,Z}
+- TimeBodyGyroscopeJerkStd()-{X,Y,Z}
+- TimeBodyAccelerometerMagnitudeMean()
+- TimeBodyAccelerometerMagnitudeStd()
+- TimeGravityAccelerometerMagnitudeMean()
+- TimeGravityAccelerometerMagnitudeStd()
+- TimeBodyAccelerometerJerkMagnitudeMean()
+- TimeBodyAccelerometerJerkMagnitudeStd()
+- TimeBodyGyroscopeMagnitudeMean()
+- TimeBodyGyroscopeMagnitudeStd()
+- TimeBodyGyroscopeJerkMagnitudeMean()
+- TimeBodyGyroscopeJerkMagnitudeStd()
+- FrequencyBodyAccelerometerMean()-{X,Y,Z}
+- FrequencyBodyAccelerometerStd()-{X,Y,Z}
+- FrequencyBodyAccelerometerJerkMean()-{X,Y,Z}
+- FrequencyBodyAccelerometerJerkStd()-{X,Y,Z}
+- FrequencyBodyGyroscopeMean()-{X,Y,Z}
+- FrequencyBodyGyroscopeStd()-{X,Y,Z}
+- FrequencyBodyAccelerometerMagnitudeMean()
+- FrequencyBodyAccelerometerMagnitudeStd()
+- FrequencyBodyAccelerometerJerkMagnitudeMean()
+- FrequencyBodyAccelerometerJerkMagnitudeStd()
+- FrequencyBodyGyroscopeMagnitudeMean()
+- FrequencyBodyGyroscopeMagnitudeStd()
+- FrequencyBodyGyroscopeJerkMagnitudeMean()
+- FrequencyBodyGyroscopeJerkMagnitudeStd()
