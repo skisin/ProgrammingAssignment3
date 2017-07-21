@@ -1,4 +1,4 @@
-This document describes all data fields in the Tidy_Data.txt dataset.
+# This document describes all data fields in the Tidy_Data.txt dataset.
 
 Identifier Labels
 - subject  - The ID of the test subject
