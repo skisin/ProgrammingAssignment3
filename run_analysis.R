@@ -6,7 +6,7 @@
 ## 3. Uses descriptive activity names to name the activities in the data set
 ## 4. Appropriately labels the data set with descriptive variable names.
 ## 5. From the data set in step 4, creates a second, independent tidy data set 
-      with the average of each variable for each activity and each subject.
+##    with the average of each variable for each activity and each subject.
 
 ## 0. Install the packages and check working DIR:
 library(data.table)
@@ -125,14 +125,10 @@ names(Combine_2) <- gsub("-std()", "Std", names(Combine_2))
 ##    for each activity and each subject.
 
 ## Create final data set:
-
+Final_Data <- aggregate(. ~subject + activity, Combine_2, mean)
 Final_Data <- Final_Data[order(Final_Data$subject,Final_Data$activity),]
 
 ## Create a file Tidy_Data.txt:
 
-Final_Data_melted <- melt(Final_Data, id = c("subject", "activity"))
-
-Final_Data_mean <- dcast(Final_Data_melted, subject + activity ~ variable, mean)
-
-write.table(Final_Data_mean, file = "Tidy_Data.txt",row.name=FALSE)
+write.table(Final_Data, file = "Tidy_Data.txt",row.name=FALSE)
 
